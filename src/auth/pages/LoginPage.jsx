@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "../../heroes/hooks/useForm";
+import Swal from "sweetalert2";
 
 export const LoginPage = () => {
   const { authlogin } = useContext(AuthContext);
@@ -10,14 +11,25 @@ export const LoginPage = () => {
 
   const navigate = useNavigate();
 
-  const onLogin = () => {
+  const onLogin = (e) => {
+    e.preventDefault();
     const lastPath = localStorage.getItem("last-path") || "/";
-    authlogin({
-      id: 123,
-      name: name,
-    });
-    navigate(lastPath, { replace: true });
-    onResetForm();
+
+    if (name.trim().length <= 1) {
+      Swal.fire({
+        title: "Error!",
+        text: "Do you please enter a name",
+        icon: "error",
+        confirmButtonText: "Cool",
+      });
+    } else {
+      authlogin({
+        id: 123,
+        name: name,
+      });
+      navigate(lastPath, { replace: true });
+      onResetForm();
+    }
   };
   return (
     <>
