@@ -12,3 +12,4 @@
 - Uso de componentes y CustomHooks
 - Utilizacion de boostrap para el diseno de la api
 - Manejo de url mediante querys de busqueda (react-query)
+- Creacion de alertas (Sweetalert2)
