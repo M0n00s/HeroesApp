@@ -9,7 +9,7 @@ export const HeroCard = ({
   first_appearance,
   characters,
 }) => {
-  const heroUrl = `/src/assets/heroes/${id}.jpg`;
+  const heroUrl = `/HeroesApp/src/assets/heroes/${id}.jpg`;
   const navigate = useNavigate();
   const onHero = () => {
     navigate(`/hero/${id}`);
