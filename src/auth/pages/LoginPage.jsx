@@ -13,7 +13,7 @@ export const LoginPage = () => {
 
   const onLogin = (e) => {
     e.preventDefault();
-    const lastPath = localStorage.getItem("last-path") || "/";
+    const lastPath = localStorage.getItem("last-path") || "/marvel";
 
     if (name.trim().length <= 1) {
       Swal.fire({

@@ -20,7 +20,7 @@ export const HeroPage = () => {
       <div className="row mt-5">
         <div className="col-4 d-flex justify-content-center">
           <img
-            src={`/src/assets/heroes/${heroId}.jpg`}
+            src={`/HeroesApp/src/assets/heroes/${heroId}.jpg`}
             alt={hero.superhero}
             className="img-thumbnail animate__animated animate__fadeInLeft"
           />
