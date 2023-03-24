@@ -1,7 +1,7 @@
 # HeroesApp
 
 ## Desarrollo basico Frontend con react: tema heroes de Marvel y Dc
-[Deploy link on github pages](https://m0n00s.github.io/HeroesApp/)
+[Deploy link on github pages](https://heroapp.onrender.com)
 
 ## Caracteristicas:
 
