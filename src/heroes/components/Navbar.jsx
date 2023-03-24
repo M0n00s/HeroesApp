@@ -71,7 +71,9 @@ export const Navbar = () => {
           </ul>
           <div className="d-flex navbar-nav ">
             <span className="nav-link ">
-              <b>Hola!</b> {authstate.user?.name.toUpperCase()}
+              <b>Hola!</b>{" "}
+              {authstate.user.name !== undefined &&
+                authstate.user.name.toUpperCase()}
             </span>
             <button
               onClick={onLogout}
