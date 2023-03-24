@@ -9,7 +9,7 @@ export const HeroCard = ({
   first_appearance,
   characters,
 }) => {
-  const heroUrl = `/src/assets/heroes/${id}.jpg`;
+  const heroUrl = `https://res.cloudinary.com/dksz8cxlh/image/upload/v1679678667/hero/${id}.jpg`;
   const navigate = useNavigate();
   const onHero = () => {
     navigate(`/hero/${id}`);
